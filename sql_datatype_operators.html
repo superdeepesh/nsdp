@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head
+    content must come *after* these tags -->
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <title>Deepesh</title>
+
+
+
+  </head>
+  <body>
+
+      <!--Navigation bar-->
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sql.html">SQL Tutorial</a></li>
+        <li><a href="#">Cours de Français</a></li>
+      </ul>
+
+      <!--div with class content-->
+      <div class="content">
+        <!--Main Titles-->
+        <h1>SQL Data Types & Operators</h1><br/>
+
+        <h2>Data Types</h2>
+        <p>In computer science and computer programming, a data type or simply
+          type is a classification of data which tells the compiler or
+          interpreter how the programmer intends to use the data. Most
+          programming languages support various types of data, for example:
+          real, integer or Boolean.</p>
+
+        <p>
+          A compiler is a program that converts instructions into a machine-code
+          or lower-level form so that they can be read and executed by a computer.
+        </p>
+
+        <p>Some of the commonly used data types:</p>
+        <table>
+    <tr>
+        <td style="width:25%;">INT</td>
+        <td>Integer numerical (no decimal). Precision 10.</td>
+    </tr>
+    <tr>
+        <td>DECIMAL(p,s)</td>
+        <td>Exact numerical, precision p, scale s. Example: decimal(5,2) is a number that has 3 digits before the decimal and 2 digits after the decimal.</td>
+    </tr>
+    <tr>
+        <td>NUMERIC(p,s)</td>
+        <td>Exact numerical, precision p, scale s. (Same as DECIMAL).</td>
+    </tr>
+    <tr>
+        <td>DATE</td>
+        <td>Stores year, month, and day values.</td>
+    </tr>
+    <tr>
+        <td>TIME</td>
+        <td>Stores year, month, and day values.</td>
+    </tr>
+    <tr>
+        <td>CHAR</td>
+        <td>Stores year, month, and day values.</td>
+    </tr>
+    <tr>
+        <td>VARCHAR(n)</td>
+        <td>Stores year, month, and day values.</td>
+    </tr>
+</table>
+
+
+      <p>There are other data types: bigint, smallint, tinyint, bit, money, smallmoney, float, real,
+datetime, smalldatetime, text, binary, varbinary, image, sql_variant, timestamp,
+uniqueidentifier, xml, cursor, table.</p>
+
+      <h2>Arithmetic Operators</h2>
+      <table>
+    <tr>
+        <td style="width:25%;">+</td>
+        <td>Addition</td>
+    </tr>
+    <tr>
+        <td>-</td>
+        <td>Subtraction</td>
+    </tr>
+    <tr>
+        <td>*</td>
+        <td>Multiplication</td>
+    </tr>
+    <tr>
+        <td>/</td>
+        <td>Division</td>
+    </tr>
+    <tr>
+        <td>%</td>
+        <td>Modulus - Divides left hand operand by right hand operand and returns remainder.</td>
+    </tr>
+</table>
+
+
+      <h2>Comparison Operators</h2>
+      <table>
+        <tr>
+            <td style="width:25%;">=</td>
+            <td>Equal</td>
+        </tr>
+        <tr>
+            <td>!=</td>
+            <td>Not Equal</td>
+        </tr>
+        <tr>
+            <td>&lt;&gt;</td>
+            <td>Not Equal</td>
+        </tr>
+        <tr>
+            <td>&gt;</td>
+            <td>Greater Than</td>
+        </tr>
+        <tr>
+            <td>&lt;</td>
+            <td>Less Than</td>
+        </tr>
+        <tr>
+            <td>&gt;=</td>
+            <td>Greater or Equal to</td>
+        </tr>
+        <tr>
+            <td>&lt;=</td>
+            <td>Less or Equal to</td>
+        </tr>
+        <tr>
+            <td>!&lt;</td>
+            <td>Not Less than</td>
+        </tr>
+        <tr>
+            <td>!&gt;</td>
+            <td>Not Greater than</td>
+        </tr>
+      </table>
+
+      <h2>Logical Operators</h2>
+      <table>
+        <tr>
+            <td style="width:25%;">ALL</td>
+            <td>Compare one value to all values in another value set.</td>
+        </tr>
+        <tr>
+            <td>AND</td>
+            <td>Allows the existence of multiple conditions in an SQL statement's WHERE clause.</td>
+        </tr>
+        <tr>
+            <td>ANY</td>
+            <td>Is used to compare a value to any applicable value in the list according to the condition</td>
+        </tr>
+        <tr>
+            <td>BETWEEN&nbsp;</td>
+            <td>Used to search for values that are within a set of values, given the minimum value and the maximum value.</td>
+        </tr>
+        <tr>
+            <td>EXISTS</td>
+            <td>Used to search for the presence of a row in a specified table that meets certain criteria.</td>
+        </tr>
+        <tr>
+            <td>IN&nbsp;</td>
+            <td>Used to compare a value to a list of literal values.</td>
+        </tr>
+        <tr>
+            <td>LIKE</td>
+            <td>Used to compare a value to similar values using wildcard operators.</td>
+        </tr>
+        <tr>
+            <td>NOT</td>
+            <td>Reverses the meaning of logical operator with which it is used. Examples: NOT EXISTS, NOT BETWEEN, NOT IN, etc.</td>
+        </tr>
+        <tr>
+            <td>OR</td>
+            <td>Used to combine multiple conditions in an SQL statement's WHERE clause.</td>
+        </tr>
+        <tr>
+            <td>IS NULL</td>
+            <td>Used to compare a value with a NULL value.</td>
+        </tr>
+        <tr>
+            <td>UNIQUE</td>
+            <td>Search every row of a specified table for uniqueness (no duplicates).</td>
+        </tr>
+      </table>
+
+      </div>
+
+
+
+
+  </body>
+</html>

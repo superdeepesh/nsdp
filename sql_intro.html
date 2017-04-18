@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head
+    content must come *after* these tags -->
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <title>Deepesh</title>
+
+
+
+  </head>
+  <body>
+
+      <!--Navigation bar-->
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sql.html">SQL Tutorial</a></li>
+        <li><a href="#">Cours de Français</a></li>
+      </ul>
+
+      <!--div with class content-->
+      <div class="content">
+        <!--Main Titles-->
+        <h1>SQL Introduction</h1><br/>
+
+        <!--Simple terms-->
+        <h2>What is a database?</h2>
+        <p>
+          A database is a collection of information that is organized so that
+          it can be easily accessed, managed and updated. Data is organized
+          into rows, columns and tables, and it is indexed to make it easier
+          to find relevant information.
+        </p>
+        <p>
+          Example</br>
+          A Library database - It can store information about the books, authors,
+          language, price and everything else important. Instead of walking around
+          in a library, spending hours searching a book, you can easily consult a
+          database and find the specific book you are looking for based on say the
+          GENRE, or AUTHOR, or LANGUAGE, saving you a lot of time.
+        </p>
+        <p>
+          Now it is up to you to think about the uses of databases and other advantages.
+        </p>
+
+        <h2>What is SQL?</h2>
+        <p>
+          SQL (pronounced "ess-que-el") stands for <b>S</b>tructured <b>Q</b>uery
+           <b>L</b>anguage.<br/><br/>
+          Here are simple english definitions of each word:<br/>
+          <b>Structured</b> - Structured is an adjective that comes from the noun structure, which is something that's been built or put together: usually, we think of a building being a structure. Anything that has been put together in an organized, deliberate way can be described as structured.<br/>
+          <b>Query</b> - a question, especially one expressing doubt or requesting information.<br/>
+          <b>Language</b> - the method of human communication, either spoken or written, consisting of the use of words in a structured and conventional way.<br/>
+        </p>
+
+        <p>
+          SQL is a computer or programming language used to communicate with databases.
+          It is the standard language used for relational databases management systems
+          (database that has some relationsips between them).
+        </p>
+
+        <p>
+          SQL statements like <code>SELECT * FROM myTableName</code> are used to perform tasks
+          such as update data on a database, retrieve data, remove or manipulate data on a database.
+        </p>
+
+        <h2>What is RDBMS?</h2>
+        <p>
+          RDBMS stands for Relational Database Management System.<br/>
+          Some common relational database management systems that use SQL are:
+          <li>Oracle</li>
+          <li>Sybase</li>
+          <li>Microsoft SQL Server</li>
+          <li>Access</li>
+          <li>Ingres</li>
+        </p>
+
+        <p>Our Tutorial will cover the main statements used in all databases but
+        we shall focus more on 'Microsoft SQL Server'.</p>
+
+        <h2>What is a table?</h2>
+        <p>In SQL a table is also called an OBJECT</p>
+<pre>+-------+---------+-----+
+| Name  | Surname | Age |
++-------+---------+-----+
+| Clark | Kent    | 33  |
++-------+---------+-----+
+| Bruce | Wayne   | 35  |
++-------+---------+-----+</pre>
+        <p>A table contains COLUMNS.</p>
+        <p>This is a column:</p>
+        <pre>+-------+
+| Name  |
++-------+
+| Clark |
++-------+
+| Bruce |
++-------+</pre>
+        <p><code>Name</code> is known as the <b>field name</b></p>
+        <p>This is another column:</p>
+         <pre>+-----+
+| Age |
++-----+
+| 33  |
++-----+
+| 35  |
++-----+</pre>
+      <p><code>Age</code> is known as the <b>field name</b></p>
+
+      <p>A table contains ROWS.</p>
+      <p>This is a row:</p>
+      <pre>+-------+------+----+
+| Clark | Kent | 33 |
++-------+------+----+</pre>
+      <p>This is another row:</p>
+      <pre>+-------+-------+----+
+| Bruce | Wayne | 35 |
++-------+-------+----+</pre>
+
+      <p>When you execute a query, a result-set will be returned to you.</p>
+      <p>Example: <code>SELECT * FROM mytable;</code> will return you the result-set:
+        <pre>+-------+---------+-----+
+| Name  | Surname | Age |
++-------+---------+-----+
+| Clark | Kent    | 33  |
++-------+---------+-----+
+| Bruce | Wayne   | 35  |
++-------+---------+-----+</pre>
+      </p>
+
+      </div>
+
+  </body>
+</html>
